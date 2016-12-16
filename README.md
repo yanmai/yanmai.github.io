@@ -1,14 +1,9 @@
-##Kunka
+# 燕麦的个人博客
 
-> 这只是另外一个 Jekyll 主题文件。
+博客网址：[爱脑补](http://www.inaobu.com/)。欢迎光临！
 
-![kunka blog theme](images/blog.jpg)
+## 使用方法
 
-###使用方法
+使用```rake post title="title name"```自动添加文章到 ```_posts``` 文件夹。
 
-* 把主题文件 clone 到你本地服务器
-* 使用```rake post title="title name"```自动添加文章到 ```_posts``` 文件夹。
-* 修改 ```_config.yml```，里面有很多可以配置的选项。
-* 运行 ```jekyll serve```，浏览器打开 http://localhost:4000 便可以看到新的主题。
-
-更多的介绍，详见[Jekyll 博客主题 Kunka](http://www.zhanxin.info/jekyll/2013-08-11-jekyll-theme-kunka.html)。
+> 如果文章名称中没有英文单词，请修改 ```_posts``` 文件夹下相应的文件名字为： ```YYYY-MM-DD-title-name.md```。否则会报错。
