@@ -225,8 +225,8 @@ class firstSectionCollectionViewCell: UICollectionViewCell {
 
 2、Xib自定义UICollectionViewCell的代码部分(使用xib创建控件部分略)：`firstSectionCollectionViewCell.swift`
 
- ```swift
- import UIKit
+```swift
+import UIKit
 class goodsCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var goodStatusImageView: UIImageView!
@@ -238,7 +238,7 @@ class goodsCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }   
 }
- ```
+```
 
 3、自定UICollectionView的headerView：重点是我们的headerView要继承`UICollectionReusableView`
 
