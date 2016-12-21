@@ -58,6 +58,8 @@ nav:
     url: /contact.html
   - text: 友情链接
     url: /links/
+  # - text: 技术支持
+  #   url: /technologies/
 
 #Author config
 author:
