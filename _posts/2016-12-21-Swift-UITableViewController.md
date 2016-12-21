@@ -5,7 +5,7 @@ description: ""
 category: "Swift"
 tags: []
 ---
-
+　　UITableViewController类继承UIViewController类，负责处理表格布局，下面将通过代码介绍一下UITableViewController的基本使用。
 
 ##### 一、创建一个MySettingViewController: UITableViewController，由于此控制器已经继承了UITableViewDelegate, UITableViewDataSource，所以在此无需再设置了。
 ```swift

@@ -27,19 +27,14 @@ class storeCollectionViewController: UICollectionViewController,UICollectionView
 ```swift
 override func viewDidLoad() {
     super.viewDidLoad()
-
     //注册自定义headerView
     collectionView?.register(picturesCarouselHeaderView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: picturesCarouselHeaderViewID)
-
     //注册自定义cell(纯代码)
     collectionView?.register(firstSectionCollectionViewCell.self, forCellWithReuseIdentifier: firstSectionCellID)
-
     //注册自定义cell(Xib)
     let cellNib = UINib(nibName: "goodsCollectionViewCell", bundle: nil)
     collectionView?.register(cellNib, forCellWithReuseIdentifier: reCellID)
-
     collectionView?.backgroundColor = UIColor.init(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
-
     //设置collectionView顶到状态栏的顶部
     self.automaticallyAdjustsScrollViewInsets = false
 }
@@ -59,23 +54,17 @@ override func collectionView(_ collectionView: UICollectionView, numberOfItemsIn
     return 20
 }
 override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
     if indexPath.section == 0 {
-
         let cell:firstSectionCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: firstSectionCellID, for: indexPath) as! firstSectionCollectionViewCell
         cell.backgroundColor=UIColor.white
         return cell
     }
-
     let cell:goodsCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: reCellID, for: indexPath) as! goodsCollectionViewCell
-
     cell.backgroundColor=UIColor.white
-
     cell.goodStatusImageView.image=UIImage(named: "s_XXXX")
     cell.goodImageView.image=UIImage(named: "icon_XXXX")
     cell.goodNameLabel.text="XXXX"
     cell.goodPriceLabel.text="XXXX"
-
     return cell
 }
 ```
@@ -85,14 +74,12 @@ override func collectionView(_ collectionView: UICollectionView, cellForItemAt i
 ```swift
 //MARK: UICollectionViewDelegate
 override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-
     if indexPath.section==0 {
         return false
     }
     return true
 }
 override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
     let goodsDetailViewController = GoodsDetailViewController.init()
     self.navigationController?.pushViewController(goodsDetailViewController, animated: true)
 }
@@ -107,10 +94,8 @@ init(){
     // 设置四边间距
     layout.minimumLineSpacing = 1;
     layout.minimumInteritemSpacing = 0;
-
     super.init(collectionViewLayout: layout)
 }
-
 required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
 }
@@ -122,12 +107,10 @@ required init?(coder aDecoder: NSCoder) {
 ```swift
 //MARK: -UICollectionViewDelegateFlowLayout
 func  collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
     if indexPath.section == 0 {
         return CGSize(width: UIScreen.main.bounds.width, height: 68)
     }
     return CGSize(width: (UIScreen.main.bounds.width-0.5)/2, height: 250)
-
 }
 
 //返回section上下左右的间距
@@ -144,22 +127,16 @@ func collectionView(_ collectionView: UICollectionView, layout collectionViewLay
 ```swift
 //创建headerView
 override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-
     var headerView = picturesCarouselHeaderView()
-
     if kind==UICollectionElementKindSectionHeader {
-
         headerView=collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: picturesCarouselHeaderViewID, for: indexPath) as! picturesCarouselHeaderView
     }
-
     headerView.backgroundColor=UIColor.init(red: 227/255.0, green: 227/255.0, blue: 227/255.0, alpha: 1)
-
     return headerView
 }
 
 //返回headerView的宽高
 func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-
     if section==0 {
         return CGSize(width: UIScreen.main.bounds.width, height: 234)
     }
@@ -174,19 +151,15 @@ func collectionView(_ collectionView: UICollectionView, layout collectionViewLay
 ```swift
 import UIKit
 class firstSectionCollectionViewCell: UICollectionViewCell {
-
     lazy var lineView : UIView = {
       let view = UIView()
         view.backgroundColor=UIColor.init(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
       return view
     }()
-
     lazy var titleLabel: UILabel = UILabel(title:"全部商品",fontSize:17,color:UIColor.black)    
     lazy var detailedTitleLabel: UILabel = UILabel(title:"好东西都在这哦",fontSize:13,color:UIColor.black)
-
     override init(frame: CGRect) {
         super.init(frame: frame)
-
         setUpUI()
     }
 
@@ -201,21 +174,18 @@ class firstSectionCollectionViewCell: UICollectionViewCell {
             make.top.equalTo(self.snp.top)
             make.height.equalTo(10)
         }
-
         titleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self.snp.left)
             make.right.equalTo(self.snp.right)
             make.top.equalTo(lineView.snp.bottom).offset(12)
             make.height.equalTo(17)
         }
-
         detailedTitleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self.snp.left)
             make.right.equalTo(self.snp.right)
             make.top.equalTo(titleLabel.snp.bottom).offset(7)
             make.height.equalTo(13)
         }
-
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -265,23 +235,18 @@ class StoreViewController: UIViewController,UICollectionViewDataSource,UICollect
         // 设置cell四边间距
         layout.minimumLineSpacing = 1;
         layout.minimumInteritemSpacing = 0;
-
         let collectionView=UICollectionView(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height), collectionViewLayout: layout)
         //注册自定义headerView
         collectionView.register(PicturesCarouselHeaderView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: picturesCarouselHeaderViewID)
-
         //注册自定义cell(纯代码)
         collectionView.register(FirstSectionCollectionViewCell.self, forCellWithReuseIdentifier: firstSectionCellID)
-
         //注册自定义cell(Xib)
         let cellNib = UINib(nibName: "GoodsCollectionViewCell", bundle: nil)
         collectionView.register(cellNib, forCellWithReuseIdentifier: reCellID)
-
         collectionView.backgroundColor = UIColor.init(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
 
         //设置collectionView顶到状态栏的顶部
         self.automaticallyAdjustsScrollViewInsets = false
-
         collectionView.delegate = self
         collectionView.dataSource = self
 
@@ -289,11 +254,9 @@ class StoreViewController: UIViewController,UICollectionViewDataSource,UICollect
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.addSubview(goodsCollectionView)
-
     }
 }
 ```
 
-　　Swift作为苹果公司力推的iOS编程的新宠儿，一些新的项目目前已经使用了Swift。为了不让自己被这股浪潮无情的淘汰，所以欣然地接受他；Swift语言也在不断更新，希望在这里我们可以共同进步。
+　　
