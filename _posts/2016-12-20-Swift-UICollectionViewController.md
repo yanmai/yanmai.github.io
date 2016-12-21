@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Swift之UICollectionViewController"
+title: "Swift-UICollectionViewController"
 description: ""
 category: "Swift"
 tags: []
 ---
 
-　　`UICollectionViewController` 和 `UITableViewController` 这两个控制器，经常会在开发中被使用到。这次先主要展示一下用 Swift 怎样写 `UICollectionViewController`，具体代码如下：
+　　`UICollectionViewController` 和 `UITableViewController` 这两个控制器，经常在开发中会被使用到。这次先主要展示一下用 Swift 怎样写 `UICollectionViewController`，具体代码如下：
 
 ##### 一、创建一个UICollectionViewController：`storeCollectionViewController.swift` ，由于此控制器已经继承了 `UICollectionViewDelegate, UICollectionViewDataSource`，所以在此设置一个 `UICollectionViewDelegateFlowLayout` 的代理就可以了。
 
