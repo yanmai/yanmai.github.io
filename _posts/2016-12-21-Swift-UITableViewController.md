@@ -5,6 +5,8 @@ description: ""
 category: "Swift"
 tags: []
 ---
+
+
 ##### 一、创建一个MySettingViewController: UITableViewController，由于此控制器已经继承了UITableViewDelegate, UITableViewDataSource，所以在此无需再设置了。
 ```swift
 import UIKit
@@ -24,12 +26,10 @@ class MySettingViewController: UITableViewController {
 ```swift
 private let MySettingCellID = "MySettingTableViewCell"
 override func viewDidLoad() {
-        super.viewDidLoad()
-        
+        super.viewDidLoad()       
         tableView.register(MySettingTableViewCell.self, forCellReuseIdentifier: MySettingCellID)
         tableView.isScrollEnabled=false
-        tableView.backgroundColor = UIColor.white
-             
+        tableView.backgroundColor = UIColor.white        
         navigationItem.leftBarButtonItem=UIBarButtonItem.init(image: UIImage(named:"backPersonalCenter"), style: .plain, target: self, action: (#selector(backPersonalCenterViewController)))
     }
 ```
@@ -41,11 +41,9 @@ override func viewDidLoad() {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
-    }
-    
+    }    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell:MySettingTableViewCell = tableView.dequeueReusableCell(withIdentifier: MySettingCellID, for: indexPath) as! MySettingTableViewCell
@@ -72,9 +70,8 @@ override func viewDidLoad() {
 ```swift
 override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 53
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    }   
+override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row==1 {
             self.navigationController?.pushViewController(FeedbackViewController(), animated: true)
         }
@@ -99,7 +96,6 @@ override func tableView(_ tableView: UITableView, viewForFooterInSection section
             make.centerX.equalTo(footerView.snp.centerX)
             make.bottom.equalTo(footerView.snp.bottom)
         }
-    
         return footerView
     }
 ```
@@ -115,8 +111,7 @@ class MySettingTableViewCell: UITableViewCell {
     var bottomLineView:UIView = UIView()
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+        super.init(style: style, reuseIdentifier: reuseIdentifier)       
         setUpUI()
         self.selectionStyle = .none
     }
@@ -135,30 +130,26 @@ class MySettingTableViewCell: UITableViewCell {
             make.centerY.equalTo(self)
             make.height.equalTo(13)
             make.left.equalTo(self).offset(16)
-        }
-        
+        } 
         rightBtn.snp.makeConstraints { (make) in
             make.centerY.equalTo(self)
             make.height.equalTo(17)
             make.right.equalTo(self).offset(-16)
         }
-        
         bottomLineView.snp.makeConstraints { (make) in
             make.left.equalTo(self).offset(16)
             make.height.equalTo(1)
             make.right.equalTo(self)
             make.bottom.equalTo(self)
         }       
-    }
-    
+    }   
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
+        super.setSelected(selected, animated: animated)        
         // Configure the view for the selected state
     }
 }
