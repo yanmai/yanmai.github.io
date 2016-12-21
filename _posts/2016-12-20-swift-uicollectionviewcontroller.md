@@ -78,6 +78,7 @@ override func collectionView(_ collectionView: UICollectionView, cellForItemAt i
 
     return cell
 }
+
 ```
 
 ##### 四、UICollectionViewController的代理方法：`UICollectionViewDelegate`
@@ -97,6 +98,7 @@ override func collectionView(_ collectionView: UICollectionView, didSelectItemAt
     self.navigationController?.pushViewController(goodsDetailViewController, animated: true)
 }
 ```
+
 
 ##### 五、UICollectionViewController布局的相关代码：`UICollectionViewDelegateFlowLayout`
 
