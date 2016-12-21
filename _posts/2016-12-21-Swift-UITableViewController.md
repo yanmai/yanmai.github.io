@@ -19,6 +19,7 @@ class MySettingViewController: UITableViewController {
  }
 ```
 #####二、在override func viewDidLoad() {}设置属性和注册UITableViewCell
+<!-- 注释 -->
 ```swift
 private let MySettingCellID = "MySettingTableViewCell"
 override func viewDidLoad() {
@@ -31,7 +32,7 @@ override func viewDidLoad() {
         navigationItem.leftBarButtonItem=UIBarButtonItem.init(image: UIImage(named:"backPersonalCenter"), style: .plain, target: self, action: (#selector(backPersonalCenterViewController)))
     }
 ```
-
+<!-- 注释 -->
 #####三、UITableViewController的数据源方法：UITableViewDataSource
 ```swift
 // MARK: - Table view data source
