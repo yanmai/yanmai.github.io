@@ -18,7 +18,9 @@ class MySettingViewController: UITableViewController {
     }
  }
 ```
+
 ##### 二、在override func viewDidLoad() {}设置属性和注册UITableViewCell
+
 ```swift
 private let MySettingCellID = "MySettingTableViewCell"
 override func viewDidLoad() {
@@ -30,7 +32,6 @@ override func viewDidLoad() {
              
         navigationItem.leftBarButtonItem=UIBarButtonItem.init(image: UIImage(named:"backPersonalCenter"), style: .plain, target: self, action: (#selector(backPersonalCenterViewController)))
     }
-    
 ```
 
 ##### 三、UITableViewController的数据源方法：UITableViewDataSource
@@ -64,10 +65,10 @@ override func viewDidLoad() {
         }
         return cell
     }
-
 ```
 
 ##### 四、UITableViewController的代理方法：UITableViewDelegate
+
 ```swift
 override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 53
@@ -81,6 +82,7 @@ override func tableView(_ tableView: UITableView, heightForRowAt indexPath: Inde
 ```
 
 ##### 五、UITableViewController的footerView
+
 ```swift
 override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footerView = UIView()
@@ -103,6 +105,7 @@ override func tableView(_ tableView: UITableView, viewForFooterInSection section
 ```
 
 ##### 六、自定义UITableViewCell
+
 ```swift
 //  MySettingTableViewCell.swift
 import UIKit
