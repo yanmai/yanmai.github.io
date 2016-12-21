@@ -4,10 +4,6 @@
 
 ## 添加文章的步骤
 
-使用```rake post title="title name"```自动添加文章到 ```_posts``` 文件夹。
-
-> 如果文章名称中没有英文单词，请修改 ```_posts``` 文件夹下相应的文件名字为： ```YYYY-MM-DD-title-name.md```。否则会报错。
-
 1. 使用这个命令创建文章模板
 `rake post title="<文章标题>"`，新文件被创建在 `_posts` 目录下。
     > 也可以在 `_posts` 下直接创建文件，注意保持文件名格式为：`YYYY-MM-DD-title-name.md`, 然后 再从其他文件拷贝最上面七行代码。
