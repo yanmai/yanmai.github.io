@@ -52,8 +52,6 @@ nav:
     url: /
   - text: 分类目录
     url: /categories/
-  - text: 技术支持
-    url: /technologies/
   - text: 文章归档
     url: /archives/
   - text: 联系
