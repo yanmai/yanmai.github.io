@@ -156,8 +156,8 @@ class firstSectionCollectionViewCell: UICollectionViewCell {
         view.backgroundColor=UIColor.init(red: 239/255.0, green: 239/255.0, blue: 239/255.0, alpha: 1)
       return view
     }()
-    lazy var titleLabel: UILabel = UILabel(title:"全部商品",fontSize:17,color:UIColor.black)    
-    lazy var detailedTitleLabel: UILabel = UILabel(title:"好东西都在这哦",fontSize:13,color:UIColor.black)
+    lazy var titleLabel: UILabel = UILabel(title:"XXXXXX",fontSize:17,color:UIColor.black)    
+    lazy var detailedTitleLabel: UILabel = UILabel(title:"XXXXXXXX",fontSize:13,color:UIColor.black)
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUpUI()
