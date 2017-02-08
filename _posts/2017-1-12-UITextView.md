@@ -12,7 +12,7 @@ tags: []
 　　demo示例图：  
 　　　　　　　　![示例图](/images/2017/textView.PNG)
 
-　　部分主要代码如下：
+　　部分主要代码如下:  
 　　'''swift
 　　
 　　
@@ -163,6 +163,7 @@ extension ViewController{
         }
     }
 
-}
+}  
+
 '''
 　　
