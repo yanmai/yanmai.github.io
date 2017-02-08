@@ -31,8 +31,6 @@ class MySettingViewController: UITableViewController {
  }
 ```
 
-<!--  -->
-
 ```swift
 import UIKit
 import SnapKit
@@ -48,8 +46,6 @@ class ViewController: UIViewController ,UITextViewDelegate {
     }()  
 
 ```
-　  
-<!--  -->
 
 ```swift  
 import UIKit
