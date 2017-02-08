@@ -19,7 +19,7 @@ class MySettingViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
  }
-```
+ ```
 
 ##### 二、在override func viewDidLoad() {}设置属性和注册UITableViewCell
 
