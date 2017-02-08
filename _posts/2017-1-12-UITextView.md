@@ -12,11 +12,16 @@ tags: []
 　　demo示例图：  
 　　　　　　　　![示例图](/images/2017/textView.PNG)
 
-　　部分主要代码如下:  
-　　'''swift
+　　部分主要代码如下:   
+　　'''swift  
+　　import SnapKit  
 　　
-　　
-import UIKit
+import SVProgressHUD  
+
+　　''' 
+　　  
+　　  '''swift
+　　import UIKit
 import SnapKit
 import SVProgressHUD
 
