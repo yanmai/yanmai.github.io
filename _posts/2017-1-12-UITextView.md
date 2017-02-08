@@ -13,6 +13,20 @@ tags: []
 　　　　　　　　![示例图](/images/2017/textView.PNG)
 
 　　主要代码如下:  
+```swift
+import UIKit
+class MySettingViewController: UITableViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+ }
+```
+　　  
+　　  
 　　```swift
 import UIKit
 import SnapKit
@@ -25,7 +39,8 @@ class ViewController: UIViewController ,UITextViewDelegate {
         view.layer.cornerRadius = 6
         view.layer.borderColor = UIColor.gray.cgColor
         return view
-    }()
+    }()  
+    
 ```
 
 
