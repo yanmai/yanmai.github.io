@@ -12,16 +12,10 @@ tags: []
 　　demo示例图：  
 　　　　　　　　![示例图](/images/2017/textView.PNG)
 
-　　部分主要代码如下:   
-　　'''swift  
-　　import SnapKit  
-　　
-import SVProgressHUD  
-
-　　''' 
+　　部分主要代码如下:  　　  
+```swift  
 　　  
-　　  '''swift
-　　import UIKit
+import UIKit
 import SnapKit
 import SVProgressHUD
 
@@ -56,7 +50,6 @@ class ViewController: UIViewController ,UITextViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor = UIColor.red
         
         //让textView的文本不居中
         self.automaticallyAdjustsScrollViewInsets = false
@@ -125,12 +118,18 @@ class ViewController: UIViewController ,UITextViewDelegate {
         })
         
     }
+}  
+```
 
-}
 
-//mark: -UITextViewDelegate
+
+  
+  ```swift
+
+
+//mark: -UITextViewDelegate  
+
 extension ViewController{
-
     //文本框已经结束编辑时被调用
     func textViewDidEndEditing(_ textView: UITextView) {
         feedbackTextView.resignFirstResponder()
@@ -170,5 +169,5 @@ extension ViewController{
 
 }  
 
-'''
+```
 　　
