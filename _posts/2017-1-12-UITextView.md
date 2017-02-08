@@ -14,7 +14,7 @@ demo上传到github的确爽翻天了，即不占用电脑空间，自己再想�
 
 demo示例图：  
 
-![示例图](/images/2017/textView.PNG)
+    ![示例图](/images/2017/textView.PNG)
 
 主要代码如下:  
 
