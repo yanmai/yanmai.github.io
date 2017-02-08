@@ -18,35 +18,6 @@ demo示例图：
 
 主要代码如下:  
 
-```swift
-import UIKit
-class MySettingViewController: UITableViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
- }
-```
-
-```swift
-import UIKit
-import SnapKit
-import SVProgressHUD
-
-class ViewController: UIViewController ,UITextViewDelegate {
-    private lazy var feedbackView: UIView = {
-        let view = UIView()
-        view.layer.borderWidth = 1
-        view.layer.cornerRadius = 6
-        view.layer.borderColor = UIColor.gray.cgColor
-        return view
-    }()  
-
-```
-
 ```swift  
 import UIKit
 import SnapKit
@@ -156,7 +127,9 @@ class ViewController: UIViewController ,UITextViewDelegate {
 
 <!--  -->
 
+
 ```swift
+
 //mark: -UITextViewDelegate  
 
 extension ViewController{
