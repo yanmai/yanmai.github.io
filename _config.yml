@@ -135,14 +135,6 @@ baiduAnaly:
   id: a89a524322e6a3e17b2bc7a342fe2e7b
 
 #comment config
-disqus:
-  config: false
-  id: inaobu
-
-duoshuo:
-  config: false
-  id: inaobu
-
 uyan:
   config: true
   id: 897628
