@@ -137,8 +137,17 @@ baiduAnaly:
 #comment config
 disqus:
   config: false
-  id: piznblog
+  id: inaobu
 
 duoshuo:
   config: false
-  id: zhanxin
+  id: inaobu
+
+uyan:
+  config: true
+  id: 897628
+
+changyan:
+  config: false
+  appid: cysQKdOgt
+  conf: prod_e0ea3cce552a301b41ab033a41424e94
