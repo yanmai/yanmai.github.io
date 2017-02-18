@@ -88,11 +88,11 @@ follow:
 #Links
 customLinks:
   - item:
-    - text: 我的 Github
-      url: https://github.com/yanmai/
     - text: “地瓜哥”博客网
       url: http://www.diguage.com/
-    message: Friends
+    - text: Scott Liu
+      url: http://blog.csdn.net/liuhe688
+    message: 友情链接
   - item:
     - text: Apple Developer
       url: https://developer.apple.com/develop/
@@ -100,29 +100,59 @@ customLinks:
       url: https://news.ycombinator.com/
     - text: StackOverflow
       url: http://stackoverflow.com/
+    - text: Awesome iOS
+      url: https://github.com/vsouza/awesome-ios
     - text: Reddit
       url: https://www.reddit.com/
     - text: Ray Wenderlich
       url: https://www.raywenderlich.com/
-    - text: Code4App 开源代码库
-      url: http://code4app.com/
-    - text: UI4App UI 素材
-      url: http://ui4app.com/
+    - text: TouchArcade
+      url: http://toucharcade.com/
+    - text: Dribbble
+      url: https://dribbble.com/
+    message: 英文资料
+  - item:
     - text: 开发者头条
       url: https://toutiao.io/
     - text: 码农周刊
       url: http://weekly.manong.io/issues/
+    - text: iOS头条
+      url: https://toutiao.io/c/ios
+    - text: Code4App 开源代码库
+      url: http://code4app.com/
+    - text: UI4App UI 素材
+      url: http://ui4app.com/
     - text: iOS 学习资料整理
       url: https://github.com/Aufree/trip-to-iOS
     - text: CocoaChina
       url: http://www.cocoachina.com/
     - text: 唐巧的技术博客
       url: http://blog.devtang.com/
-    - text: TouchArcade
-      url: http://toucharcade.com/
-    - text: Dribbble
-      url: https://dribbble.com/
-    message: 开发资源
+    - text: V2EX
+      url: https://www.v2ex.com/
+    - text: CSDN - 全球最大中文IT社区
+      url: http://www.csdn.net/
+    - text: 博客园
+      url: http://www.cnblogs.com/
+    message: 中文资料
+  - item:
+    - text: Coursera
+      url: https://www.coursera.org/
+    - text: 优达学城
+      url: https://cn.udacity.com/
+    - text: 网易云课堂
+      url: http://study.163.com/
+    - text: 网易公开课
+      url: https://open.163.com/
+    - text: 极客学院
+      url: http://www.jikexueyuan.com/
+    - text: 慕课网
+      url: http://www.imooc.com/
+    - text: edX
+      url: https://www.edx.org/edxchina
+    - text: Mooc 学院
+      url: http://mooc.guokr.com/
+    message: 在线课程
 
 #googleAnaly, your id link UA-12345678-X
 googleAnaly:
