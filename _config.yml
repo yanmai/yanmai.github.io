@@ -128,12 +128,18 @@ customLinks:
       url: http://www.cocoachina.com/
     - text: 唐巧的技术博客
       url: http://blog.devtang.com/
+    - text: 36氪
+      url: http://36kr.com/
     - text: V2EX
       url: https://www.v2ex.com/
     - text: CSDN - 全球最大中文IT社区
       url: http://www.csdn.net/
     - text: 博客园
       url: http://www.cnblogs.com/
+    - text: 开源中国
+      url: http://www.oschina.net/
+    - text: 豆瓣
+      url: https://www.douban.com/
     message: 中文资料
   - item:
     - text: Coursera
