@@ -21,3 +21,33 @@ category: "<这里填写类目，比如 Swift>"
 ```
 
 ### 4、最后，可以在这个文件的下面愉快写文章了。
+
+## 本地运行
+
+有时，我们需要对项目做一些小的调整，可以在本地运行该项目。
+
+### 安装依赖
+
+以此执行如下命令，安装所需要的依赖：
+
+```
+gem install bundler
+
+bundle config mirror.https://rubygems.org https://gems.ruby-china.org
+
+bundle --path=.bundle/gems
+```
+
+> 这里假设电脑上已经安装好了 Ruby 开发环境。
+
+这些操作只需要执行一次即可。
+
+### 启动项目
+
+运行如下命令来启动项目：
+
+```
+bundle exec jekyll serve
+```
+
+稍等片刻，就可以访问： <http://127.0.0.1:4000/>。
